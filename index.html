@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>تعلم الأمازيغية (الورقلية)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📘 تعلم الأمازيغية (الورقلية)</h1>
+  <p style="margin-top: 20px; text-align: center; color: #444; font-weight: bold;">
+    سيساعدك هذا التطبيق على تعلم اللغة الأمازيغية (الورقلية) بحيث سيمكنك من إضافة الكلمات التي تود تعلمها في المجموعة المناسبة لها.
+  </p>
+  <div class="controls">
+    <input type="text" id="globalSearchInput" placeholder="🔍 ابحث في كل الكلمات..." />
+    <button onclick="window.location.href='quiz.html'" class="quiz-btn">🧠 الاختبارات</button>
+  </div>
+  <div class="tabs" id="groupTabs"></div>
+  <div class="word-form">
+    <label style="text-align: center;">
+      الترجمة بالعربية
+      <input type="text" id="translationInput" placeholder="مثال: تفاحة" />
+    </label>
+    <label style="text-align: center;">
+      الكلمة بالأمازيغية
+      <input type="text" id="wordInput" placeholder="مثال: ⵜⴰⵎⴰⴷⴰⵍⵜ" />
+    </label>
+    <button onclick="addWord()">➕ إضافة</button>
+  </div>
+  <ul id="wordList"></ul>
+  <script src="script.js"></script>
+</body>
+</html>
